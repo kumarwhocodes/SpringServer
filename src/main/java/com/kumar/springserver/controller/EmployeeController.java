@@ -16,6 +16,11 @@ public class EmployeeController {
     @Autowired
     private EmployeeDao dao;
 
+    @GetMapping("/")
+    public String defaultPage(){
+        return "Employee-Backend";
+    }
+
     @GetMapping("/employee/get-all")
     public List<Employee> getAllEmployees(){
         return dao.getAllEmployees();
