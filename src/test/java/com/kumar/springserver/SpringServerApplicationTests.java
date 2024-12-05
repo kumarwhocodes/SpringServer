@@ -1,7 +1,7 @@
 package com.kumar.springserver;
 
 import com.kumar.springserver.model.employee.Employee;
-import com.kumar.springserver.model.employee.EmployeeDao;
+import com.kumar.springserver.model.employee.EmployeeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SpringServerApplicationTests {
 
 	@Autowired
-	private EmployeeDao dao;
+	private EmployeeService dao;
 
 	@Test
 	void addEmployeeTest() {
